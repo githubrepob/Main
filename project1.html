@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Color Changer</title>
+</head>
+<body bgcolor="orange">
+    <center>
+    <h1>Background Color Change!!</h1>
+  <div class="main">
+    <label for="color">Enter a color:</label>
+    <input type="text" id="color">
+    <button onclick="change()">Change Background Color</button>
+  </div></center>
+
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .main {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  label {
+    font-size: 18px;
+  }
+  
+  input {
+    padding: 8px;
+    margin: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: blue;
+  }
+  </style>
+
+  <script>
+    function change() {
+    var color = document.getElementById("color").value;
+    document.body.style.backgroundColor = color;
+  }
+  </script>
+</body>
+</html>
